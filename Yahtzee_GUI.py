@@ -128,7 +128,7 @@ def keep_track_of_progress():
     num_reroll = 0                          #Resets the number of rerolls
     if player == total_num_player+1:        #If the last player has gone, switch back to the first player
         player=1
-    if rounds == total_num_player*2:       #If the number of rounds done is equal to the total number of players times 13, then display the winner and all cores on a new GUI, and destroy all widgets
+    if rounds == total_num_player*13:       #If the number of rounds done is equal to the total number of players times 13, then display the winner and all cores on a new GUI, and destroy all widgets
         clear_all_widgets()                 #Delete all existing widgets to signify the end of the game
         score = find_total_scores()         #Stores a list of all the total scores
         find_winner(score)                  #Finds the winner and highest score from the list of scores
